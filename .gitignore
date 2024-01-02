@@ -1,0 +1,6 @@
+**/*.[eo][0-9]{5}
+code/logs/*
+data/*
+results/*.tbl
+results/*.txt
+results/*.mcl
