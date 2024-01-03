@@ -14,8 +14,9 @@ We made a parameter search for the blast and finally we decided to stay with -qc
 see hoang_blast_pan_I98_C98.tbl compare_seqs_lengts.r, histogram_SC-PAN.png and histogram_SUGIT.png for more details about the parameter search.
 
 next using  the HCCA clustering provided by CoNekT Grasses clusters_hoang2017.txt we for DEGs in the network
+```sh
 grep -f SUIGT_DEGs_HSTvsHSB.txt hoang_blast_pan_I98_C98.tbl | cut -f2 | xargs -I{} grep {} clusters_hoang2017.txt > HCCA_HSTvsHSB.txt
-
+```
 5/6 DEGs were found in the same module.
 
 Now using mcl to make the clusters of the network, run_mcl.sh run mcl for you, it uses i=1.8
